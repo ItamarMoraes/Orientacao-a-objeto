@@ -23,4 +23,36 @@
 
         return this._saldo;
     }
+
+    depositar(valor) {
+        this._saldo = this._saldo + valor;
+
+        return this._saldo;
+    }
+}
+
+class ContaCorrente {
+    constructor(agencia, numero, saldo, cartaoCredito){
+        super(agencia, numero, saldo);
+        this.tipo = 'corrente';
+        this.cartaoCredito = cartaoCredito;
+    }
+
+    get this._cartaoCredito(valor) {
+        this.this._cartaoCredito = valor;
+    }
+}
+
+class ContaPoupanca {
+    constructor(agencia, numero, saldo){
+        super(agencia, numero, saldo);
+        this.tipo = 'poupança';
+    }
+}
+
+class ContaUniversitaria {
+    constructor(agencia, numero, saldo){
+        super(agencia, numero, saldo);
+        this.tipo = 'universitária';
+    }
 }
